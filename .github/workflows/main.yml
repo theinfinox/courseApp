@@ -1,0 +1,41 @@
+name: Deploy Frontend App
+
+on:
+  push:
+    branches:
+      - main  # Change this to the branch you want to deploy from
+
+jobs:
+  check_connection:
+    runs-on: [self-hosted, linux, ict]
+    steps:
+      - name: Check Connection
+        run: echo "Connection successful"
+  deploy:
+    runs-on: self-hosted  # Ensure this matches your runner label
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Sync with Origin
+        run: |
+          git fetch --all
+          git reset --hard origin/main  # Change 'main' to your default branch if different
+
+      - name: Build Docker Image
+        run: |
+          cd ../../frontend
+          docker build -t mern-frontend .
+
+      - name: Stop Running Container
+        run: |
+          docker stop frontend || true  # Ignore if container is not running
+
+      - name: Remove Existing Container
+        run: |
+          docker rm frontend || true  # Ignore if container does not exist
+
+      - name: Run New Container
+        run: |
+          docker run --name=frontend --network=mern_network -d -p 5173:5173 mern-frontend
