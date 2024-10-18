@@ -7,7 +7,7 @@
 ### Build the client 
 
 ```sh
-cd mern/frontend
+cd ./frontend
 docker build -t mern-frontend .
 ```
 
@@ -26,7 +26,7 @@ Open your browser and type `http://localhost:5173`
 ### Build the server
 
 ```sh
-cd mern/backend
+cd ./backend
 docker build -t mern-backend .
 ```
 
