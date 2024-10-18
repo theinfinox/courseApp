@@ -25,7 +25,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          cd ../../frontend
+          cd ./courseApp/courseApp/frontend
           docker build -t mern-frontend .
 
       - name: Stop Running Container
