@@ -13,9 +13,9 @@ jobs:
         run: echo "Connection successful"
 
       - name: Print working directory
-      run: |
-        pwd
-        echo "Current working directory is: $(pwd)"
+        run: |
+            pwd
+            echo "Current working directory is: $(pwd)"
         
   deploy:
     runs-on: self-hosted  # Ensure this matches your runner label
