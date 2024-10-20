@@ -1,59 +1,11 @@
 # DevOps Training
 
 - SSH For students
-    1. Mubin -  
-        
-        ```bash
-        ssh -i "student.pem" [ubuntu@ec2-13-61-2-211.eu-north-1.compute.amazonaws.com](mailto:ubuntu@ec2-13-61-2-211.eu-north-1.compute.amazonaws.com)
-        ```
-        
-        IP:  ``` curl https://ipinfo.io/ip ```
-        
-    2. Abdulla - 
-        
-        ```bash
-        ssh -i "student.pem" ubuntu@ec2-13-60-83-249.eu-north-1.compute.amazonaws.com
-        ```
-        
-        IP:  ``` curl https://ipinfo.io/ip ```        
-    3. Divya -
-        
-        ```bash
-        ssh -i "student.pem" ubuntu@ec2-13-60-184-214.eu-north-1.compute.amazonaws.com
-        ```
-        
-        IP:  ``` curl https://ipinfo.io/ip ```
-               
-    5. Anjay - 
-        
-        ```bash
-        ssh -i "student.pem" ubuntu@ec2-16-170-211-42.eu-north-1.compute.amazonaws.com
-        ```
-        
-        IP:  ``` curl https://ipinfo.io/ip ```
-                
-    6. Shubhasree - 
-        
-        ```bash
-        ssh -i "student.pem" ubuntu@ec2-16-171-137-112.eu-north-1.compute.amazonaws.com
-        ```
-        
-        IP:  ``` curl https://ipinfo.io/ip ```
-                
-    7. Sreedevi -
-        
-        ```bash
-        ssh -i "student.pem" ubuntu@ec2-13-60-214-95.eu-north-1.compute.amazonaws.com
-        ```
-        
-        IP:  ``` curl https://ipinfo.io/ip ```
-                
-    8. Summayya - 
-        
-        ```bash
-        ssh -i "student.pem" ubuntu@ec2-13-49-228-70.eu-north-1.compute.amazonaws.com
-        ```
-        
+    Here by removing instances since, charges are upon me. Adding a demo for starting an aws instance.
+- https://youtu.be/2zeoNC4cdTA 
+Use t3.micro from stockholm region for free tier usage
+- https://medium.com/@jijinvj/how-to-deploy-a-mern-stack-app-on-aws-ec2-with-ssl-nginx-and-subdomain-c597d3075d83
+
         IP:  ``` curl https://ipinfo.io/ip ```
                 
 
