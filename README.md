@@ -1,5 +1,7 @@
 # A simple MERN stack application 
 
+- for notion files go to [Link to Notion files](https://github.com/theinfinox/courseApp/tree/docs)
+
 ### Create a network for the docker containers
 
 `docker network create mern_network`
