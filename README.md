@@ -7,7 +7,8 @@
         ssh -i "student.pem" [ubuntu@ec2-13-61-2-211.eu-north-1.compute.amazonaws.com](mailto:ubuntu@ec2-13-61-2-211.eu-north-1.compute.amazonaws.com)
         ```
         
-        IP:  13.61.2.211
+        IP:  ``` curl https://ipinfo.io/ip
+ ```
         
     2. Abdulla - 
         
