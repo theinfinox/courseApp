@@ -1,4 +1,4 @@
-name: Deploy Frontend App
+name: Deploy Frontend and Backend App
 
 on:
   push:
@@ -29,19 +29,36 @@ jobs:
           git fetch --all
           git reset --hard origin/main  # Change 'main' to your default branch if different
 
-      - name: Build Docker Image
+      - name: Build Frontend Docker Image
         run: |
           cd ./frontend
           docker build -t mern-frontend .
 
-      - name: Stop Running Container
+      - name: Build Backend Docker Image
+        run: |
+          cd ./backend
+          docker build -t mern-backend .
+
+      - name: Stop Running Frontend Container
         run: |
           docker stop frontend || true  # Ignore if container is not running
 
-      - name: Remove Existing Container
+      - name: Remove Existing Frontend Container
         run: |
           docker rm frontend || true  # Ignore if container does not exist
 
-      - name: Run New Container
+      - name: Stop Running Backend Container
+        run: |
+          docker stop backend || true  # Ignore if container is not running
+
+      - name: Remove Existing Backend Container
+        run: |
+          docker rm backend || true  # Ignore if container does not exist
+
+      - name: Run New Frontend Container
         run: |
           docker run --name=frontend --network=mern_network -d -p 5173:5173 mern-frontend
+
+      - name: Run New Backend Container
+        run: |
+          docker run --name=backend --network=mern_network -d -p 5050:5050 mern-backend
