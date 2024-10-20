@@ -7,8 +7,7 @@
         ssh -i "student.pem" [ubuntu@ec2-13-61-2-211.eu-north-1.compute.amazonaws.com](mailto:ubuntu@ec2-13-61-2-211.eu-north-1.compute.amazonaws.com)
         ```
         
-        IP:  ``` curl https://ipinfo.io/ip
- ```
+        IP:  ``` curl https://ipinfo.io/ip ```
         
     2. Abdulla - 
         
@@ -16,48 +15,47 @@
         ssh -i "student.pem" ubuntu@ec2-13-60-83-249.eu-north-1.compute.amazonaws.com
         ```
         
-        IP:  13.60.83.249
-        
+        IP:  ``` curl https://ipinfo.io/ip ```        
     3. Divya -
         
         ```bash
         ssh -i "student.pem" ubuntu@ec2-13-60-184-214.eu-north-1.compute.amazonaws.com
         ```
         
-        IP:  13.60.184.214
-        
-    4. Anjay - 
+        IP:  ``` curl https://ipinfo.io/ip ```
+               
+    5. Anjay - 
         
         ```bash
         ssh -i "student.pem" ubuntu@ec2-16-170-211-42.eu-north-1.compute.amazonaws.com
         ```
         
-        IP:  16.170.211.42
-        
-    5. Shubhasree - 
+        IP:  ``` curl https://ipinfo.io/ip ```
+                
+    6. Shubhasree - 
         
         ```bash
         ssh -i "student.pem" ubuntu@ec2-16-171-137-112.eu-north-1.compute.amazonaws.com
         ```
         
-        IP:  16.171.137.112
-        
-    6. Sreedevi -
+        IP:  ``` curl https://ipinfo.io/ip ```
+                
+    7. Sreedevi -
         
         ```bash
         ssh -i "student.pem" ubuntu@ec2-13-60-214-95.eu-north-1.compute.amazonaws.com
         ```
         
-        IP: 13.60.214.95
-        
-    7. Summayya - 
+        IP:  ``` curl https://ipinfo.io/ip ```
+                
+    8. Summayya - 
         
         ```bash
         ssh -i "student.pem" ubuntu@ec2-13-49-228-70.eu-north-1.compute.amazonaws.com
         ```
         
-        IP:  13.49.228.70
-        
+        IP:  ``` curl https://ipinfo.io/ip ```
+                
 
 for ICT Academy 
 
