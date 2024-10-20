@@ -6,7 +6,7 @@
 Use t3.micro from stockholm region for free tier usage
 - https://medium.com/@jijinvj/how-to-deploy-a-mern-stack-app-on-aws-ec2-with-ssl-nginx-and-subdomain-c597d3075d83
 
-        IP:  ``` curl https://ipinfo.io/ip ```
+ IP:  ``` curl https://ipinfo.io/ip ```
                 
 
 for ICT Academy 
