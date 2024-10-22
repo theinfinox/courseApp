@@ -21,10 +21,6 @@ docker build -t mern-frontend .
 
 Open your browser and type `http://localhost:5173`
 
-### Run the mongodb container
-
-`docker run --network=mern_network --name mongodb -d -p 27017:27017 -v ~/opt/data:/data/db mongo:latest`
-
 ### Build the server
 
 ```sh
@@ -34,9 +30,6 @@ docker build -t mern-backend .
 
 ### Run the server
 
-`docker run --name=backend --network=mern_network -d -p 5050:5050 mern-backend`
+`docker run --name=backend --network=mern_network -d -p 4000:4000 mern-backend`
 
-## Using Docker Compose
-
-`docker compose up -d`
 
