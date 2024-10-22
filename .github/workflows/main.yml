@@ -29,6 +29,12 @@ jobs:
           git fetch --all
           git reset --hard origin/main  # Change 'main' to your default branch if different
 
+      - name: Create .env file
+        run: |
+          echo "port=${{ secrets.PORT_RUNNER }}" >> .env
+          # Add more secrets if needed
+          echo "con=${{ secrets.CON_SECRET }}" >> .env    
+
       - name: Build Frontend Docker Image
         run: |
           cd ./frontend
