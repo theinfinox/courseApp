@@ -61,4 +61,4 @@ jobs:
 
       - name: Run New Backend Container
         run: |
-           docker run --name=backend --network=mern_network -d -p 4000:4000 --env-file ./${{ secrets.PATH_SECRET }}/.env mern-backend
+           docker run --name=backend --network=mern_network -d -p 4000:4000 mern-backend
