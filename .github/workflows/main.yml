@@ -29,12 +29,6 @@ jobs:
           git fetch --all
           git reset --hard origin/main  # Change 'main' to your default branch if different
 
-      - name: Create .env file
-        run: |
-          echo "port=${{ secrets.PORT_RUNNER }}" >> .env
-          # Add more secrets if needed
-          echo "con=${{ secrets.CON_SECRET }}" >> .env    
-
       - name: Build Frontend Docker Image
         run: |
           cd ./frontend
@@ -67,4 +61,4 @@ jobs:
 
       - name: Run New Backend Container
         run: |
-          docker run --name=backend --network=mern_network -d -p 4000:4000 mern-backend
+           docker run --name=backend --network=mern_network -d -p 4000:4000 --env-file ./${{ secrets.PATH_SECRET }}/.env mern-backend
