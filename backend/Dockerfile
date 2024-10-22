@@ -8,8 +8,6 @@ RUN npm install
 
 COPY . .
 
-COPY ./../../../.env .
-
 EXPOSE 4000:4000
 
 CMD ["node", "app.js"]
