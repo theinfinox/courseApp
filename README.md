@@ -1,4 +1,4 @@
-# A simple MERN stack application .
+# A simple MERN stack application
 
 - for notion files go to [Link to Notion files](https://github.com/theinfinox/courseApp/tree/docs)
 
