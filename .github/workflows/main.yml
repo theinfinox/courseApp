@@ -61,4 +61,4 @@ jobs:
 
       - name: Run New Backend Container
         run: |
-           docker run --name=backend --network=mern_network -d -p 4000:4000 -v /home/${{variables.USER_NAME}}/.env:/app/.env mern-backend
+           docker run --name=backend --network=mern_network -d -p 4000:4000 -v /home/$USER_NAME/.env:/app/.env mern-backend
