@@ -30,6 +30,6 @@ docker build -t mern-backend .
 | USE NEEDFUL .env FILE
 ### Run the server
 
-`docker run --name=backend --network=mern_network -d -p 4000:4000 -v /home/theinfinox/.env:/app/.env mern-backend`
+`docker run --name=backend --network=mern_network -d -p 4000:4000 -v /home/$(whoami)/.env:/app/.env mern-backend`
 
 
